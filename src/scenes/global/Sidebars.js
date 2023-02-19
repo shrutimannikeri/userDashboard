@@ -2,22 +2,19 @@ import { ProSidebar , Menu, MenuItem } from "react-pro-sidebar";
 import {useContext, useState} from 'react'
 
 import { Box, IconButton, useTheme ,Typography} from "@mui/material";
-import { Link,useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { tokens} from  '../../theme'
 import "react-pro-sidebar/dist/css/styles.css";
 
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import { profileContext } from "../../App";
 const Item=({title,to,icon,selected,setSelected})=>{
@@ -51,7 +48,6 @@ const Sidebars=()=>{
     const [profile, setProfile] = useContext(profileContext);
   // const styles={width:isCollapsed?"100px":""}
 
-  const navigatepage=useNavigate()
     return (
       <Box
         sx={{
