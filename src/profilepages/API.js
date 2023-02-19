@@ -1,0 +1,1 @@
+export const profile_API="https://63f1dbe14f17278c9a1b4a70.mockapi.io"
