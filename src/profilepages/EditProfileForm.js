@@ -40,13 +40,12 @@ const navigate=useNavigate()
     },
     validationSchema: userValidationSchema,
     onSubmit: (editProfile) => {
-      console.log("onSubmit", editProfile);
       editprofile(editProfile);
     },
   });
 
   const editprofile = (editProfile) => {
-    console.log(editProfile);
+    
     fetch(`${profile_API}/profile/1`, {
       method: "PUT",
       body: JSON.stringify(editProfile),

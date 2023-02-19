@@ -34,13 +34,13 @@ const navigate=useNavigate()
     },
     validationSchema: userValidationSchema,
     onSubmit: (editUser) => {
-      console.log("onSubmit", editUser);
+      
       edituser(editUser);
     },
   });
 
   const edituser = (editUser) => {
-    console.log(editUser);
+ 
     fetch(`${API}/users/${user.id}`, {
       method: "PUT",
       body: JSON.stringify(editUser),

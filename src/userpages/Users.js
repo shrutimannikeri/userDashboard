@@ -14,7 +14,7 @@ export default function Users() {
         fetch(`${API}/users/${id}`,
         {method:"DELETE"})
       .then(()=>getUserlist())
-      .then(console.log("deleted"))
+      
     };
    
  

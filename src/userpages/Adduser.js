@@ -35,13 +35,12 @@ const navigate=useNavigate()
     },
     validationSchema: userValidationSchema,
     onSubmit: (newUser) => {
-      console.log("onSubmit", newUser);
       adduser(newUser);
     },
   });
 
   const adduser = (newUser) => {
-    console.log(newUser);
+
     fetch(`${API}/users`, {
       method: "POST",
       body: JSON.stringify(newUser),
