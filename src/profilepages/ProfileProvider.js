@@ -25,13 +25,3 @@ console.log(data)
     </profileContext.Provider>
   );
 };
-
-// export function Profile() {
-//   const [data,setData] = useContext(profileContext);
-//   console.log(data)
-//   return (
-//     <Box>
-//       <p>hi</p>
-//     </Box>
-//   );
-// }
